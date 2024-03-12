@@ -70,7 +70,7 @@ addToTheSecond()
      */
 
 const addParagraph = function () {
-  let firstDiv = document.querySelector("body div:first-of-type")
+  let firstDiv = document.querySelector("body > div:first-of-type")
   const newP = document.createElement("p")
   newP.innerText = "Added paragraph"
   firstDiv.appendChild(newP)
@@ -95,7 +95,7 @@ hideFirstUl()
 
 const paintItGreen = function () {
   let allUl = document.querySelectorAll("ul")
-  Array.from(allUl).forEach((li) => (li.style = "background-color: palegreen;"))
+  allUl.forEach((li) => (li.style = "background-color: palegreen;"))
 }
 
 paintItGreen()
