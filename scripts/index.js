@@ -107,10 +107,10 @@ paintItGreen()
 const makeItClickable = function () {
   let title = document.querySelector("body div h1")
   title.onclick = () => {
-    let tempArray = title.textContent.split("")
+    let tempArray = title.innerText.split("")
     tempArray.pop()
     console.log(tempArray.join(""))
-    title.textContent = tempArray.join("")
+    title.innerText = tempArray.join("")
   }
 }
 
