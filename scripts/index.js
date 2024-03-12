@@ -44,6 +44,7 @@ const changeUrls = function () {
   for (let i = 0; i < links.length; i++) {
     if (links[i].closest("footer") === null) {
       links[i].href = "https://www.google.com"
+      links[i].innerText = "Vai su Google"
       links[i].target = "blank"
     }
   }
