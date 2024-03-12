@@ -87,7 +87,7 @@ const hideFirstUl = function () {
   firstUl.hidden = true
 }
 
-// hideFirstUl()
+hideFirstUl()
 
 /* ESERCIZIO 8 
         Scrivi una funzione che renda verde il background di ogni lista non ordinata
