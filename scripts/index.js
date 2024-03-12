@@ -223,4 +223,22 @@ const hideAllImages = function () {}
        Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
      */
 
-const changeColorWithRandom = function () {}
+const changeColorWithRandom = function () {
+  const changeColor = document.getElementById("changeMyColor")
+
+  changeColor.onclick = () => {
+    let arrayOfNumber = []
+
+    for (let i = 0; i < 3; i++) {
+      let randomNumber = Math.floor(Math.random() * 256)
+      arrayOfNumber.push(randomNumber)
+    }
+
+    console.log(arrayOfNumber)
+
+    changeColor.style = `color: rgb(${arrayOfNumber[0]} ${arrayOfNumber[1]} ${arrayOfNumber[2]})`
+
+    console.log(changeColor.style)
+  }
+}
+changeColorWithRandom()
