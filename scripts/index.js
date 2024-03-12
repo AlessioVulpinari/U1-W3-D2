@@ -19,7 +19,7 @@ const addClassToTitle = function (className = "") {
   title.classList.add(className)
 }
 
-addClassToTitle("new_class")
+addClassToTitle("myHeading")
 
 /* ESERCIZIO 3
         Scrivi una funzione che cambi il testo dei p figli di un div
